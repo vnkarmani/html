@@ -1,0 +1,565 @@
+                                                                               HTML ASSIGNMENT
+
+1. Are the HTML tags and elements the same thing?
+ANS:-No,HTML tags and Elements are not same thing.
+    -HTML Tags are building blocks of HTML Page. They tell the browser how it should display content to the user. A tag starts with a < bracket and ends with a > bracket. Most tags exist in pairs in HTML,tags have an opening and closing part.
+    -The HTML element is everything from the start tag to the end tag:
+    -HTML Element==>:<tagname>Content...</tagname>
+
+2.What are tags and attributes in HTML?
+ANS:HTML TAG ==>HTML Tags are building blocks of HTML Page.
+             ==>They tell the browser how it should display content to the user. 
+             ==>A tag starts with a < bracket and ends with a > bracket. 
+             ==>Most tags exist in pairs in HTML,tags have an opening and closing part.
+
+HTML ATTRIBUTE==>WE can change the behaviour of HTML Element through Attributes.
+              ==>Attributes provide additional information about elements.
+              ==>Attributes are always specified in the starting tag.
+
+3.What are the void elements in HTML?explain with Example
+ANS:Void Elements==>The elements which has only starting tag,it is not contain ending tag.
+                 ==>It has self closing tag.
+                 ==>void elements doesnt have any content.
+                 ==>it can have attributes.
+                 ==>The ending tag is optional in void elements.
+                 ==>Void element can not be nested.
+
+LIST OF VOID ELEMENTS==><br>, <hr>, <img>, <input>, <link>, <base>, <meta>, <param>, <area>, <embed>, <col>, <track>, <source> etc.
+
+Example==><!DOCTYPE html>
+         <html lang="en">
+      <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+    </head>
+    <body>
+    <h1>Html Introduction</h1>
+    <p>HTML stands for HyperText Markup Language <br> HTML is collection of pre-definded tags or elements.<br> HTML is use for creating web page structure.</P>
+    <p>HTML is use for creating web page structure.</p>
+    <p>HTML consists of a series of elements.</p>
+    <p>HTML elements tell the browser how to display the content.</p>
+    <p>HTML never compiled its just executed on browser thats why it will never gives an error.</p>
+    <img src="" alt="">
+    </body>
+    </html>
+
+4.What are HTML Entitites?With Example
+ANS:==>Some characters are reserved in HTML.If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character        entities are used to display reserved characters in HTML.
+Syntax:==>&entity_name; or &entity_number; 
+    ==>To display a less than sign (<) we must write: &lt  or &#60; 
+    ==>To display a greater than sign (>) we must write: &gt  or &#62;
+    ==>An entity name is easy to remember.
+    ==>But Browsers may not support all entity names, but the support for entity numbers is good.
+
+Example:==><!DOCTYPE html>
+           <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void elements</title>
+  </head>
+  <body>
+    <h1>Void elements</h1>
+    <p><b>list of Void elements:</b></p>
+     <ul>
+        <li>&lt;br &gt;</li>
+        <li>&lt;hr &gt;</li>
+        <li>&lt;img &gt;</li>
+        <li>&lt;input &gt;</li>
+        <li>&lt;link &gt;</li>
+        <li>&lt;base &gt;</li>
+        <li>&lt;meta &gt;</li>
+        <li>&lt;area &gt;</li>
+        <li>&lt;col &gt;</li>
+        <li>&lt;keygen &gt;</li>
+        <li>&lt;source &gt;</li>
+        <li>&lt;track &gt;</li>
+        <li>&lt;param &gt;</li>
+     </ul>
+   </body>
+ </html>
+
+5.What are different types of lists in HTML? With Example.
+ANS:==>There are three types of List in html we use;
+     1.<ol>tag- ORDERED LIST
+       -it defines ordered list in html.
+       -An ordered list can be numerical or alphabetical.
+       -the <li> tag is used to define each list item.
+       -"reverse" attribute is used to specifies the list order should be reverse.
+       -"start" attribute is used to specify start value of an ordered list.
+       -"type"  attribute is used to specify the kind of marker to use in the list.
+     Ex:List of universities
+    <ol>
+    <li>Gujarat University</li>
+    <li>Hngu</li>
+    <li>Nirma university</li>
+    <li>Dindayal University</li>
+    </ol>
+     
+     2.<ul>tag- UNOEDERED LIST
+       -this tag defines an ordered list.
+       -the <li> tag is used to define each list item.
+       -"type" attribute is used to specifies that which kind of marker used in the list.
+      Ex:List of universities
+    <ul>
+    <li>Gujarat University</li>
+    <li>Hngu</li>
+    <li>Nirma university</li>
+    <li>Dindayal University</li>
+    </ul>
+
+     3.<dl>tag- DESCRIPTION TAG
+       -The &lt;dl> tag defines a description list.
+       -The &lt;dl> tag is used with &lt;dt> and &lt;dd> tag.
+       -where,The &lt;dt> tag defines a term/name in a description list.
+       -And the &lt;dd> tag describes each term/name. 
+       -Inside a &lt;dd> tag we can put paragraphs, line breaks, images, links, lists, etc.
+       -these all are display block elements.
+       Ex:
+        <dl>
+        <dt>List Of Universities</dt>
+        <dd>Gujarat University</dd>
+        <dd>Hngu</dd>
+        <dd>Nirma university</dd>
+        <dd>Dindayal University</dd>
+        </dl>
+
+6.What is the ‘class’ attribute in HTML? With Example.
+ANS:==>The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a class in a style sheet.it can also be used by a JavaScript to make changes to HTML elements with a specified class.
+    ==> it is a global attribute,so it can be used on any HTML element.
+   Ex:
+      <!DOCTYPE html>
+      <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class attribute</title>
+     <style>
+        .class1{
+            color:blue;
+        }
+        .class2{
+            color:maroon;
+        }
+    </style>
+ </head>
+ <body>
+    <h1 class="class2">Class attribute</h1>
+    <p class="class1">-The HTML elements with a specific class attribute.</p>
+    <p class="class1">-To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+
+ </body>
+ </html>
+
+7.What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? With Example
+ANS:==>the difference between Class and ID:
+     - A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page.
+     - The id attribute is a unique identifier that is used to specify the document.
+     - It is used by CSS and JavaScript to perform a certain task for a unique element. 
+     - In CSS, the id attribute is written using the # symbol followed by id.
+     - The class attribute is used to specify one or more class names for an HTML element.
+     - The class attribute can be used on any HTML element. 
+     - The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name. 
+     - The class name in CSS stylesheet using “.” symbol.
+Ex==>
+ <!DOCTYPE html>
+      <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class attribute</title>
+     <style>
+        .class1{
+            color:blue;
+        }
+        .class2{
+            color:maroon;
+        }
+        #para1{
+            color:green;
+        }
+        #para2{
+            color:brown;
+        }
+    </style>
+ </head>
+ <body>
+    <h1 class="class2">Class & id attribute</h1>
+    <p class="class1">-The HTML elements with a specific class attribute.</p>
+    <p class="class1">-To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+    <p id=para1>-The id attribute is a unique identifier that is used to specify the document.</p>
+    <p id=para2>-In CSS, the id attribute is written using the # symbol followed by id.</p>
+ </body>
+ </html>
+
+8.What are the various formatting tags in HTML?
+ANS==>Here are various type of formatting tag as shown below:
+    1.<b>tag
+    -This is a tag, which is used to bold the text written between it.
+    2.<strong>tag
+    -This is a tag, which tells the browser that the text is important,its also used to make text bold.
+    3.<i>tag
+    -This is a tag which is used to make text italic.</p>
+    4.<em>tag
+    -This is a tag which is used to display content in italic.</p>
+    5.<mark>tag
+    -This tag is used to highlight text.
+    6.<u>tag
+    -This tag is used to underline text written between it.
+    7.<tt>tag
+    -This tag is used to appear a text in teletype. (not supported in HTML5)
+    8.<strike>tag
+    -This tag is used to draw a strikethrough on a section of text. (Not supported in HTML5)
+    9.<sup>tag
+    -It displays the content slightly above the normal line.
+    10.<sub>tag
+    -It displays the content slightly below the normal line.
+    11.<del>tag
+    -This tag is used to display the deleted content.
+    12.<ins>tag
+    -This tag displays the content which is added
+    13.<big>tag
+    -This tag is used to increase the font size by one conventional unit
+    14.<small>tag
+    -This tag is used to decrease the font size by one unit from base font size.
+
+9.How is Cell Padding different from Cell Spacing? With Example
+ANS==>Cellpadding defines the space between a border of table cell's and the content in it.
+     - Cellspacing defines the space between each cells.
+
+Ex:
+    <!DOCTYPE html>
+    <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabletask-4</title>
+   </head>
+   <body>
+    <table border="3" align="center" cellspacing="5">
+       <caption>Tabletask-4</caption>
+       <tr>
+        <th colspan="2" rowspan="2">CI</th>
+        <th rowspan="2">All Genders</th>
+        <th>By Genders</th>
+       </tr>
+       <tr>
+        <td>
+            <table border="2" cellpadding="5">
+                <tr>
+                    <th>Males</th>
+                    <th>Females</th>
+                </tr>
+                <tr>
+                    <td>9215604</td>
+                    <td>4512358</td>
+                </tr>
+
+            </table>
+        </td>
+       </tr>
+       <tr>
+        <td><b>Rural</b></td>
+        <td align="center">6521458</td>
+        <td align="center">4215389</td>
+        <td align="center">4152348</td>
+       </tr>
+    </table>
+</body>
+</html>
+
+10.How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
+ANS==>In HTML table we can club two or more rows or columns into a single row or column with the use of "rowspan"&"colspan"attributes
+     -these two attributes are used to merge multiple row and columns into a single row and column.
+     -the "value" of these two attributes decide how many row or columns to be merge.
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabletask1</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <caption>tabletask-1</caption>
+        <tr>
+            <th>Day/Period</th>
+            <th>I <br>9:30-10:20</th>
+            <th>II <br>10:20-11:10</th>
+            <th>III <br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV <br>12:40-1:30</th>
+            <th>V <br>1:30-2:20</th>
+            <th>VI <br>2:20-3:10</th>
+            <th>VII <br> 3:10-4:00</th>
+        </tr>
+        <tr>
+            <td><b>Monday</b></td>
+            <td>Eng</td>
+            <td>Math</td>
+            <td>Che</td>
+            <td rowspan="6" align="center"><b>LUNCH</b></td>
+            <td colspan="3" align="center">Lab</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td colspan="3"  align="center">Lab</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Math</td>
+            <td>Sports</td>
+
+        </tr>
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td>Math</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>che</td>
+            <td colspan="3"  align="center">Library</td>
+        </tr>
+        <tr>
+            <td><b>Thursday</b></td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3"  align="center">lab</td>
+            <td>math</td>
+        </tr>
+        <tr>
+            <td><b>Friday</b></td>
+            <td colspan="3"  align="center">Lab</td>
+            <td>Math</td>
+            <td>Chem</td>
+            <td>Eng</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td><b>Saturday</b></td>
+            <td>Eng</td>
+            <td>Chem</td>
+            <td colspan="3"  align="center">Seminar</td>
+            <td>Sports</td>
+        </tr>
+
+    </table>
+</body>
+</html>
+
+11.What is the difference between a block-level element and an inline element?
+ANS:==>Block level elements always start from a new line,Inline elements never start from a new line.
+      -Block level elements cover space from left to right as far as it can go,Inline elements only cover the space as bounded by the tags in the HTML element.
+      -Block level elements have top and bottom margins,Inline elements don't have a top and bottom margin.
+      -some of block level  element:<p>,<div>,<hr>,<address>
+      -some of inline element:<span>,<br>,<a>,<b>
+
+12.How to create a Hyperlink in HTML? With Example
+ANS:==>HTML links are hyperlinks.
+      -it allows user go to one page to another page.
+      -we can click on a link and go to another page.
+      -When you move the mouse over a link, the mouse arrow will turn into a little hand.
+   
+   ==>HTML <a> tag defines hyperlink.
+     -the most important attribute of <a> tag is "href" attribute,which indicates link destination.
+   ==>Syntax:<a href="url">text</a>
+     -the text part will appear to user to read.
+     -Clicking on the link text, will send the reader to the specified URL address.
+     -By default, the linked page will be displayed in the current browser window.
+     -To change this, you must specify another target for the link using "target" attribute.
+     -The target attribute specifies where to open the linked document.
+     -the target attribute has following value:
+            _blank:opens a document in new tab.
+            _self: Opens the document in the same tab.
+            _parent: Opens the document in the parent frame.
+            _top:Opens the document in the full body of the window.
+ 
+13.What is the use of an iframe tag? With Example.
+ANS==>The <iframe> tag specifies an inline frame.
+     -An inline frame is used to embed another document within the current HTML document.
+     -Inline frames are used in online advertising, where the contents of the <iframe> is an ad from an external party.
+Ex:
+    <!DOCTYPE html>
+    <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+ </head>
+ <body>
+    <h1>Iframe example:</h1>
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li> <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/1Prerequestment-topics.html"
+                            target="Html tutorial">prerequestment topics</a></li>
+                    <li><a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/2Html-intro.html"
+                            target="Html tutorial">Html introduction</a< /li>
+                    <li><a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/3html-structure.html"
+                            target="Html tutorial">Html structure</a></li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/4TagvsElement.html"
+                            target="Html tutorial">tagvselements</a>
+                    </li>
+
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/5Voidelements.html"
+                            target="Html tutorial">Voidelements</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/6Attributesvsproperties.html"
+                            target="Html tutorial">Attributesvsproperties
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/7Nested%20tags.html"
+                            target="Html tutorial">Nestedtags</a> 
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/8textformattingtags.html"
+                            target="Html tutorial">Textformatting</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/9tags.html"
+                            target="Html tutorial">Html-tags</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/10imagetag.html"
+                            target="Html tutorial">Imagetag</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/11figure%20and%20figurecaption.html"
+                            target="Html tutorial">figandfigcaption</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/Sunil%20Khatri/Desktop/vikrmani/html/13list.html"
+                            target="Html tutorial">Html list</a>
+                    </li>
+
+
+                </ul>
+            </td>
+            <td>
+                <iframe src="" title="" name="Html tutorial" width="800px" height="500px"></iframe>
+            </td>
+        </tr>
+        
+
+    </table>
+
+</body>
+
+</html>
+
+14.What is the use of a span tag? Explain with example?
+ANS==>The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+     -The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+     -The <span> tag is much like the <div> element,but <div> is a block-level element and <span> is an inline element.
+
+Ex:
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <h1>The span element</h1>
+       <p>Hi,My name is<span style="color:red;>vishal karmani</span>i m basically from Deesa.
+</body>
+</html>
+
+15.How are active links different from normal links?
+ANS:==>Typically a Link is displayed in three different colors based on the usage.
+      -By default, a link will appear like this in all browsers:
+      -An unvisited link(normal link) is underlined and blue.
+      -A visited link is underlined and purple.
+      -An active link is underlined and red.
+
+16.What are the different tags to separate sections of text?
+ANS:==>We separate a section of texts in HTML using the below tags:
+      <br>tag – It is used to separate the line of text. It breaks the current line and shifts the flow of the text to a new line.
+      <p>tag–This tag is used to write a paragraph of text.
+      <blockquote>tag–This tag is used to define large quoted sections.
+
+17.What is SVG?
+ANS==>SVG stands for Scalable Vector Graphics.
+     -SVG is used to define vector-based graphics for the Web.
+     -SVG defines the graphics in XML format.
+     -Every element and every attribute in SVG files can be animated.
+     -SVG is a W3C recommendation.
+     -SVG integrates with other W3C standards such as the DOM and XSL.
+
+18.What is difference between HTML and XHTML?
+ANS==>HTML stands for Hypertext Markup Language.
+     -It is used to create websites and web applications.
+     -most of browser use HTML.
+     -HTML is not case sensitive.
+     -HTML stored in a document file format.
+     -It is not mandatory to add document label <DOCTYPE> declaration at the top of every page. We can even skip it.
+     -We can add attributes without any quotes.
+     -,html and .htm are the extensions used by HTML
+ when,
+   ==>XHTML stands for Extensible Hypertext Mark-up Language.
+     -It is used to create websites and web applications.
+     -very few browser use XHTML.
+     -XHTML is case sensitive.
+     -It stored as a markup language format.
+     -It is mandatory to add a document label <DOCTYPE> declaration at the beginning of the page.
+     -It is mandatory to add quotes on every attribute we declare.
+     -.xhtml, .xml and .xht are the file extensions used by XHTML.
+
+19.• What are logical and physical tags in HTML?
+ANS==>Logical Tags:Logical Tags are used in HTML to display the text according to the logical styles.
+     -Following are the Logical tags commonly used in HTML.
+         <abbr>tag:-Defines an abbreviation
+         <address>tag:-Defines an address element
+         <cite>tag:-Defines citation
+         <code>tag:-Defines computer code text
+         <strong>:-Defines strong text
+         <q>:-Defines short quotation
+   ==>Physical Tags:Physical Tags are used in HTML to provide actual physical formatting to the text.
+     - Following are the Physical tags commonly used in HTML.
+           <b>:-Defines bold text
+           <big>:-Defines big text
+           <i>:-Defines italic text
+           <small>:-Defines small text
+           <sup>:-Defines superscripted text
+           <sub>:-Defines subscripted text
+           <tt>:-Defines teletype text
+           <u>:-Deprecated. Use styles instead
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
