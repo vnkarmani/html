@@ -1,0 +1,123 @@
+                                                                    Html Assignment(Module-3)
+
+1.What are the e new tags added in HTML5?
+ANS==>The following tags (elements) added in HTML5:
+      1.<article>-Represents an independent piece of content of a document, such as a blog entry or newspaper article
+      2.<aside >-Represents a piece of content that is only slightly related to the rest of the page.
+      3.<audio>-Defines an audio file.
+      4.<canvas>-This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+      5.<command>-Represents a command the user can invoke.
+      6.<datalist>-Together with the a new list attribute for input can be used to make comboboxes
+      7.<details>-Represents additional information or controls which the user can obtain on demand
+      8.<embed>-Defines external interactive content or plugin.
+      9.<figure>-Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+      10.<footer>-Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+      11.<header>-Represents a group of introductory or navigational aids.
+      12.<hgroup>-Represents the header of a section.
+      13.<keygen>-Represents control for key pair generation.
+      14.<mark>-Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+      15.<meter>-Represents a measurement, such as disk usage.
+      16.<nav>-Represents a section of the document intended for navigation.
+      17.<output>-Represents some type of output, such as from a calculation done through scripting.
+      18.<progress>-Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+      19.<ruby>-Together with <rt> and <rp> allow for marking up ruby annotations.
+      20.<section>-Represents a generic document or application section
+      21.<time>-Represents a date and/or time.
+      22.<video>-Defines a video file.
+      23.<wbr>-Represents a line break opportunity.
+ 
+    ==>New types for <input> tag
+      -The input element's type attribute now has the following new values 
+
+     "color"-Color selector, which could be represented by a wheel or swatch picker
+     "date"-Selector for calendar date
+     "datetime-local"-Date and time display, with no setting or indication for time zones
+     "datetime"-Full date and time display, including a time zone.
+     "email"-Input type should be an email.
+     "month"-Selector for a month within a given year
+     "number"-A field containing a numeric value only
+     "range"-Numeric selector within a range of values, typically visualized as a slider
+     "search"-Term to supply to a search engine. For example, the search bar atop a browser.
+     "tel"-Input type should be telephone number.
+     "time"-Time indicator and selector, with no time zone information
+     "url"-Input type should be URL type.
+     "week"-Selector for a week within a given year
+
+2.How to embed audio and video in a webpage?
+ANS==>The HTML5 <audio> and <video> tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.
+    1.<video> element:
+    -The <video> element allows us to embed video files into an HTML, very similar to the way images are embedded.
+    -"src"-This attribute stands for the source, which is very similar to the src attribute used in the image element. We will add the link to a video file in the src attribute.
+    -"type"-This is going to be video/mp4 because .mp4 is the format of the video we are using. We can also use different video formats like .ogg or .webm, then the value of type attribute will change to video/ogg or video/WebM respectively.
+    -"control"-We will have to add controls manually by using the controls attribute to our video element. it can either be true or false.
+    -"autoplay"-if we remove the controls we could also make the video autoplay, by using the autoplay attribute. it can either be true or false.
+    -We can also have controls and autoplay together.
+    
+  example:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Click play button to play video</h2>
+<video src="./test.mp4" controls="true" autoplay="true"></video>
+</body>
+</html>
+
+     2.<audio> element:
+    -The <audio> element is very similar to the video element. However, the only major difference is that there are no visuals. 
+    -We can use the audio element to play an audio file on our web page — such as an mp3 file.
+    -in audio element The value in type attribute is changed from “video/mp4” to “audio/mp3”. In the src attribute, we’ve changed from a video file with .mp4 extension to an audio file with .mp3 extension.
+    -Now, just like the video element, we won’t actually be able to stop or start the audio without any controls. So, we will be adding the controls attribute to the audio element.
+    -we can also add other attributes in the <audio> element like autoplay, loop etc. it can either be true or false.
+    
+     example:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Click play button to play audio</h2>
+<audio src="./test.mp3" controls="true" autoplay="true"></audio>
+</body>
+</html>
+
+3.Semantic element in HTML5?
+ANS==>Semantic HTML elements are those that clearly describe their meaning as its name.
+     <mark>-The <mark> tag defines text that should be marked or highlighted.
+     <details>-The <details> tag specifies additional details that the user can open and close on demand.
+     <summary>-The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+     <figure>- The <figure> element to mark up a photo in a document.
+     <figcaption>-the <figcaption> element to define a caption for the photo,The <figcaption> tag defines a caption for a <figure> element.
+     <article>-The <article> tag specifies independent, self-contained content.
+     <aside>-The <aside> tag defines some content aside from the content it is placed in.The <aside> content is often placed as a sidebar in a document.
+     <footer>-The <footer> tag defines a footer for a document or section.it typically contains authorship info,copyright innfo,contact info etc.
+     <header>-The <header> element represents a container for introductory content or a set of navigational links.it typically contain logo or icon,one or more heading etc.
+     <main>-The <main> tag specifies the main content of a document.The content inside the <main> element should be unique to the document
+     <nav>-The <nav> tag defines a set of navigation links.The <nav> element is intended only for major blocks of navigation links.
+     <section>-The <section> tag defines a section in a document.
+     <time>-The <time> tag defines a specific time.
+
+4.Canvas and SVG tags?
+ANS==><canvas>tag:
+     - It is used to draw graphics on the web page.
+     -The HTML 5 <canvas> tag is used to draw graphics using scripting language like JavaScript.
+     -The <canvas> element is only a container for graphics, you must need a scripting language to draw the graphics. 
+     -A canvas is a rectangle like area on an HTML page. It is specified with canvas element. By default, the <canvas> element has no border and no content, it is like a container.
+syntax:<canvas id="" width="" height=""> </canvas>
+ 
+<svg>tag:
+-The HTML SVG is stands for Scalable Vector Graphics. 
+-SVG is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X,Y coordinate system etc.
+- It describe two-dimensional vector and mixed vector/raster graphics in XML.
+-SVG images and their behaviors are defined in XML text files. So as XML files, you can create and edit an SVG image with text editor, but generally drawing programs like inkspace are preferred to create it.
+
+example:- draw circle by svg tag.
+<svg width="100" height="100">  
+ <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red">  
+</svg>  
+
+
+

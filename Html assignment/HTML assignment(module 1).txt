@@ -1,4 +1,4 @@
-                                                                               HTML ASSIGNMENT
+                                                                               HTML ASSIGNMENT(module 1)
 
 1. Are the HTML tags and elements the same thing?
 ANS:-No,HTML tags and Elements are not same thing.
